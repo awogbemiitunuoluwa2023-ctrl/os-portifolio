@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb Tech - OS Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="lock-screen" onclick="unlockOS()">
+        <div class="text-center mt-5">
+            <div class="lock-clock" id="lock-clock">07:50</div>
+            <div class="lock-date" id="lock-date">Wednesday, June 24</div>
+        </div>
+        <div class="lock-prompt">
+            <i class="bi bi-chevron-up d-block text-center mb-1"></i>
+            Click Anywhere To Continue
+        </div>
+    </div>
+
+    <div id="desktop">
+        
+        <div class="desktop-icons-container">
+            <div class="desktop-icon" onclick="openWindow('about-win')">
+                <i class="bi bi-person-circle text-info"></i>
+                <span>About Me</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('projects-win')">
+                <i class="bi bi-folder-fill text-warning"></i>
+                <span>Projects</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('skills-win')">
+                <i class="bi bi-star-fill text-danger"></i>
+                <span>Skills</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('resume-win')">
+                <i class="bi bi-file-earmark-text-fill text-success"></i>
+                <span>Resume</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('contact-win')">
+                <i class="bi bi-envelope-fill text-primary"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+
+        <div id="about-win" class="os-window glass-panel">
+            <div class="window-header">
+                <div class="window-title"><i class="bi bi-person-circle text-info"></i> About Me</div>
+                <div class="window-controls"><button class="btn-close-os" onclick="closeWindow('about-win')"><i class="bi bi-x-lg"></i></button></div>
+            </div>
+            <div class="window-body">
+                <h3 class="border-bottom pb-2 text-info">Deb Tech</h3>
+                <h5 class="text-muted mb-3">Frontend Developer</h5>
+                <p>I am a Frontend Developer passionate about creating modern, responsive, and user-friendly websites. I enjoy transforming ideas into digital experiences through clean code, creative design, and continuous learning.</p>
+                <h5 class="mt-4 text-info">Currently focused on:</h5>
+                <ul class="row list-unstyled g-2">
+                    <li class="col-6"><i class="bi bi-patch-check text-primary me-2"></i>HTML5</li>
+                    <li class="col-6"><i class="bi bi-patch-check text-primary me-2"></i>CSS3</li>
+                    <li class="col-6"><i class="bi bi-patch-check text-primary me-2"></i>Bootstrap 5</li>
+                    <li class="col-6"><i class="bi bi-patch-check text-primary me-2"></i>Responsive Design</li>
+                    <li class="col-6"><i class="bi bi-patch-check text-primary me-2"></i>Javascript</li>
+                </ul>
+                <div class="p-3 bg-dark bg-opacity-20 rounded mt-4 border border-secondary">
+                    <strong>Goal:</strong> To become a professional frontend developer and build impactful web solutions.
+                </div>
+            </div>
+        </div>
+
+        <div id="projects-win" class="os-window glass-panel">
+            <div class="window-header">
+                <div class="window-title"><i class="bi bi-folder-fill text-warning"></i> Projects</div>
+                <div class="window-controls"><button class="btn-close-os" onclick="closeWindow('projects-win')"><i class="bi bi-x-lg"></i></button></div>
+            </div>
+            <div class="window-body">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card project-card h-100 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="bi bi-laptop me-2"></i>Palmpay</h5>
+                                <p class="card-text small text-white-50"> built this palmpay-inspired webpage using only HTML and CSS</p>
+                                <a href="https://palmpay-clone-seven.vercel.app" class="btn btn-sm btn-outline-light mt-auto">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card project-card h-100 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="bi bi-scissors me-2"></i>Printivo</h5>
+                                <p class="card-text small text-white-50">Luxury fashion portfolio with elegant design features.</p>
+                                <a href="https://printivo-iota.vercel.app" class="btn btn-sm btn-outline-light mt-auto">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6">
+                        <div class="card project-card h-100 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="bi bi-shop me-2"></i>Netflix Clone</h5>
+                                <p class="card-text small text-white-50">A responsive clone of the popular streaming service.</p>
+                                <a href="https://netflix-liart-one.vercel.app" class="btn btn-sm btn-outline-light mt-auto">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                         <div class="card project-card h-100 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="bi bi-cake2 me-2"></i>Cake Shop Website</h5>
+                                <p class="card-text small text-white-50">Modern cake ordering framework and landing page interface.</p>
+                                <a href="https://debbie-cakes-pi.vercel.app" class="btn btn-sm btn-outline-light mt-auto">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills-win" class="os-window glass-panel">
+            <div class="window-header">
+                <div class="window-title"><i class="bi bi-star-fill text-danger"></i> Skills Matrix</div>
+                <div class="window-controls"><button class="btn-close-os" onclick="closeWindow('skills-win')"><i class="bi bi-x-lg"></i></button></div>
+            </div>
+            <div class="window-body">
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>HTML5</span><span>95%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>CSS3</span><span>90%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>Bootstrap</span><span>85%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>Responsive Design</span><span>90%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>Git & GitHub</span><span>80%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1"><span>Javascript</span><span>15%</span></div>
+                    <div class="progress"><div class="progress-bar" style="width: 15%"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume-win" class="os-window glass-panel">
+            <div class="window-header">
+                <div class="window-title"><i class="bi bi-file-earmark-text-fill text-success"></i> Resume.docx</div>
+                <div class="window-controls"><button class="btn-close-os" onclick="closeWindow('resume-win')"><i class="bi bi-x-lg"></i></button></div>
+            </div>
+            <div class="window-body">
+                <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
+                    <h4 class="text-success m-0">Curriculum Vitae</h4>
+                    <button class="btn btn-sm btn-success"><i class="bi bi-download me-1"></i> Download Resume</button>
+                </div>
+                
+                <h5 class="text-white border-start border-success border-3 ps-2 mb-3">Education</h5>
+                <div class="mb-4 ms-2">
+                    <h6 class="mb-0 fw-bold">B.Sc Information Technology</h6>
+                    <small class="text-muted d-block">Osun State University (UNIOSUN)</small>
+                </div>
+
+                <h5 class="text-white border-start border-success border-3 ps-2 mb-3">Experience</h5>
+                <div class="mb-4 ms-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="mb-0 fw-bold">Frontend Developer</h6>
+                        <span class="badge bg-secondary">2026 – Present</span>
+                    </div>
+                    <small class="text-muted mb-2 d-block">Freelance</small>
+                    <p class="small text-white-50">Building highly optimized, fluid responsive landing environments and robust user spaces across standard modern UI architectures.</p>
+                </div>
+
+                <h5 class="text-white border-start border-success border-3 ps-2 mb-3">Certifications</h5>
+                <ul class="list-unstyled ms-2 small text-white-50">
+                    <li class="mb-2"><i class="bi bi-award text-success me-2"></i>Responsive Web Design</li>
+                    <li class="mb-2"><i class="bi bi-award text-success me-2"></i>HTML & CSS Fundamentals</li>
+                    <li><i class="bi bi-award text-success me-2"></i>Bootstrap 5 Core Accreditation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact-win" class="os-window glass-panel">
+            <div class="window-header">
+                <div class="window-title"><i class="bi bi-envelope-fill text-primary"></i> Contact Center</div>
+                <div class="window-controls"><button class="btn-close-os" onclick="closeWindow('contact-win')"><i class="bi bi-x-lg"></i></button></div>
+            </div>
+            <div class="window-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <h5 class="text-primary mb-3">Get In Touch</h5>
+                        <div class="mb-3 small">
+                            <div class="text-muted">Name:</div><div class="fw-bold">Deb Tech</div>
+                        </div>
+                        <div class="mb-3 small">
+                            <div class="text-muted">Email:</div><div class="fw-bold">awogbemiitunuoluwa@2023.com</div>
+                        </div>
+                        <div class="mb-3 small">
+                            <div class="text-muted">Phone:</div><div class="fw-bold">+234 708 171 9606</div>
+                        </div>
+                        <div class="mb-4 small">
+                            <div class="text-muted">Location:</div><div class="fw-bold">Osun State, Nigeria</div>
+                        </div>
+                        <div class="d-flex gap-3 fs-4">
+                            <a href="https://wa.me/+2347081719606" class="text-white hover-opacity"><i class="bi bi-whatsapp"></i></a>
+                          
+                            <a href="https://github.com/awogbemiitunuoluwa2023-ctrl" class="text-white hover-opacity"><i class="bi bi-github"></i></a>
+                            <a href="https://x.com/Debbie111417983" class="text-white hover-opacity"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://tiktok.com/@debbie_stack_01" class="text-white hover-opacity"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 border-start border-secondary border-opacity-20 ps-md-4">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label small">Name</label>
+                                <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary border-opacity-50">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Email</label>
+                                <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary border-opacity-50">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Message</label>
+                                <textarea class="form-control form-control-sm bg-dark text-white border-secondary border-opacity-50" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="taskbar glass-panel">
+            <div class="taskbar-left">
+                <div class="text-primary d-flex flex-wrap" style="width:16px; height:16px; gap:2px; cursor:pointer;">
+                    <div style="width:7px; height:7px; background:#0078d4;"></div>
+                    <div style="width:7px; height:7px; background:#0078d4;"></div>
+                    <div style="width:7px; height:7px; background:#0078d4;"></div>
+                    <div style="width:7px; height:7px; background:#0078d4;"></div>
+                </div>
+                <div class="taskbar-search">
+                    <i class="bi bi-search text-muted"></i>
+                    <span class="text-muted">Search</span>
+                </div>
+            </div>
+
+            <div class="taskbar-center">
+                <div class="taskbar-icon text-info" title="About Me" onclick="openWindow('about-win')"><i class="bi bi-person-circle"></i></div>
+                <div class="taskbar-icon text-warning" title="Projects" onclick="openWindow('projects-win')"><i class="bi bi-folder-fill"></i></div>
+                <div class="taskbar-icon text-danger" title="Skills" onclick="openWindow('skills-win')"><i class="bi bi-star-fill"></i></div>
+                <div class="taskbar-icon text-success" title="Resume" onclick="openWindow('resume-win')"><i class="bi bi-file-earmark-text-fill"></i></div>
+                <div class="taskbar-icon text-primary" title="Contact" onclick="openWindow('contact-win')"><i class="bi bi-envelope-fill"></i></div>
+            </div>
+
+            <div class="taskbar-right">
+                <div class="taskbar-systray text-muted">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-volume-up"></i>
+                    <i class="bi bi-battery-full"></i>
+                </div>
+                <div class="text-end line-height-1">
+                    <div id="tb-time">07:51</div>
+                    <div id="tb-date" style="font-size:0.65rem;">24/06/26</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
